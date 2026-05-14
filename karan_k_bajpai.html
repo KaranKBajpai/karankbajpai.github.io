@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karan Bajpai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="nav-name" href="#">Karan Bajpai</a>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="resume.pdf" target="_blank">Resume ↗</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <div class="hero" id="about">
+      <p class="hero-eyebrow">Software Engineer</p>
+      <h1>Karan<br /><em>Bajpai.</em></h1>
+      <p class="hero-bio">
+        CS graduate with a background in <strong>robotics, embedded systems, and software engineering</strong>.
+        I've built chess-playing robots, programmed autonomous systems in a semiconductor cleanroom,
+        and written low-level C from scratch. Now channeling all of it into software —
+        shipping projects and making the move into a full-time engineering role.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="resume.pdf" target="_blank">Download Resume</a>
+        <a class="btn btn-ghost" href="https://github.com/KaranKBajpai" target="_blank">GitHub ↗</a>
+        <a class="btn btn-ghost" href="https://linkedin.com/in/karan-bajpai" target="_blank">LinkedIn ↗</a>
+      </div>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">C / C++</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Java</span>
+        <span class="tag">SQL</span>
+        <span class="tag">React</span>
+        <span class="tag">ROS2</span>
+        <span class="tag">Linux</span>
+        <span class="tag">Raspberry Pi</span>
+        <span class="tag">Arduino</span>
+        <span class="tag">Git</span>
+      </div>
+    </div>
+
+    <section id="projects">
+      <p class="section-label">Projects</p>
+      <h2 class="section-title">Selected work</h2>
+      <div class="projects-list">
+
+        <div class="project-card active">
+          <div class="project-header">
+            <span class="project-name">F1 Dashboard</span>
+            <span class="badge badge-live">In Progress</span>
+          </div>
+          <p class="project-desc">
+            A Formula 1 data dashboard built with React. Pulls lap times,
+            driver positions, and race timing from the OpenF1 API. The kind of project where the
+            domain knowledge and the engineering interest are the same thing.
+          </p>
+          <div class="project-stack">
+            <span class="tag">React</span>
+            <span class="tag">OpenF1 API</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-name">Autonomous RC Car</span>
+            <span class="badge badge-live">Ongoing</span>
+          </div>
+          <p class="project-desc">
+            Building an autonomous RC car using real-time LiDAR and IMU data for obstacle detection
+            and navigation. Developing ROS2 nodes for sensor fusion, motor control, and system
+            coordination — embedded integration of hardware and software in a mobile robotics platform.
+          </p>
+          <div class="project-stack">
+            <span class="tag">C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">ROS2</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">LiDAR</span>
+            <span class="tag">IMU</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-name">Chess-Playing Robot</span>
+          </div>
+          <p class="project-desc">
+            Senior capstone project — a robotic arm that plays chess by interfacing with the Stockfish AI engine.
+            Motor control on an Arduino Mega; higher-level logic on a Raspberry Pi in Python. Involved
+            multi-device coordination, real-time actuation, and a lot of late-night debugging.
+          </p>
+          <div class="project-stack">
+            <span class="tag">C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Raspberry Pi</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-name">Unix Shell Emulator</span>
+          </div>
+          <p class="project-desc">
+            A UNIX-style shell in C with piping, I/O redirection, and background process support.
+            Built on Linux system calls for process creation and inter-process communication —
+            gets into the actual guts of how an OS runs programs.
+          </p>
+          <div class="project-stack">
+            <span class="tag">C</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Systems Programming</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-name">TCP Socket Server</span>
+          </div>
+          <p class="project-desc">
+            A TCP client-server system in C with persistent data packet exchange and a custom
+            protocol. Validated packet integrity using Wireshark. Low-level networking built from scratch.
+          </p>
+          <div class="project-stack">
+            <span class="tag">C</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Networking</span>
+            <span class="tag">Wireshark</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-name">Online Banking System</span>
+          </div>
+          <p class="project-desc">
+            A backend system in C++ for managing bank accounts, transactions, and file persistence.
+            Modeled with OOP principles and full error handling across checking and savings operations.
+          </p>
+          <div class="project-stack">
+            <span class="tag">C++</span>
+            <span class="tag">OOP</span>
+            <span class="tag">File I/O</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="section-label">Experience</p>
+      <h2 class="section-title">Where I've worked</h2>
+      <div class="exp-list">
+
+        <div class="exp-item">
+          <div class="exp-date">Aug 2025<br/>Present</div>
+          <div>
+            <div class="exp-role">Mechatronics Technician II</div>
+            <div class="exp-company">Analog Devices, Inc — Equipment Engineering</div>
+            <ul class="exp-bullets">
+              <li>Programmed and tuned collaborative robots using TMFlow / TMScript for pick-and-place operations</li>
+              <li>Configured and calibrated robot vision systems for landmark detection and precise automated handling</li>
+              <li>Modified Python scripts to interface with robots and automate control tasks</li>
+              <li>Maintained industrial wireless networks including Phoenix Contact WLAN radios</li>
+              <li>Operated autonomous mobile robots in a semiconductor cleanroom using MobilePlanner software</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-date">Aug 2020<br/>May 2024</div>
+          <div>
+            <div class="exp-role">B.S. Computer Science</div>
+            <div class="exp-company">Pacific University — Forest Grove, OR</div>
+            <ul class="exp-bullets">
+              <li>GPA 3.7 — Magna Cum Laude, Dean's List</li>
+              <li>Recipient of the Future Connect Scholarship</li>
+              <li>Coursework in algorithms, data structures, OS, networking, databases, and robotics</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-date">Sep 2018<br/>Jun 2020</div>
+          <div>
+            <div class="exp-role">General Education</div>
+            <div class="exp-company">Portland Community College — Portland, OR</div>
+            <ul class="exp-bullets">
+              <li>GPA 3.90 — President's List, Dean's List</li>
+              <li>Recipient of the Future Connect Scholarship</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Karan Bajpai &mdash; karanbajpai.com</p>
+  </footer>
+
+</body>
+</html>
